@@ -1,0 +1,97 @@
+{
+  "info": {
+    "_postman_id": "15bacf72-e36b-4f4d-bc04-a68a5997982f",
+    "name": "MiniBootcamp",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55695946",
+    "_collection_link": "https://go.postman.co/collection/55695946-15bacf72-e36b-4f4d-bc04-a68a5997982f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Bank account data request",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Authorization",
+            "value": "Basic aWx1bWFfZGV2ZWxvcG1lbnRfRlg0ZjBNNXN4RGdrNXFGeVpuazYwWmVuZ0FmQTlvMzF4M2VjZDI5dmloamM0Vmh5SjhGY2xaaEhqanc6",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"bank_account_number\": \"12345670\",\r\n \"bank_code\": \"BCA\",\r\n \"given_name\": \"FIRA DIYANKA\",\r\n \"surname\": \"FIRA DIYANKA\",\r\n \"reference_id\": \"testing123-456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.iluma.ai/v1.1/identity/bank_account_data_requests",
+          "protocol": "https",
+          "host": [
+            "api",
+            "iluma",
+            "ai"
+          ],
+          "path": [
+            "v1.1",
+            "identity",
+            "bank_account_data_requests"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Bank Account data",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic aWx1bWFfZGV2ZWxvcG1lbnRfRlg0ZjBNNXN4RGdrNXFGeVpuazYwWmVuZ0FmQTlvMzF4M2VjZDI5dmloamM0Vmh5SjhGY2xaaEhqanc6",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"bank_account_number\": \"876543210\",\r\n \"bank_code\": \"BCA\",\r\n \"given_name\": \"FIRA DIYANKA\",\r\n \"surname\": \"FIRA DIYANKA\",\r\n \"reference_id\": \"ardi1234\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.iluma.ai/v1.1/identity/bank_account_data_requests/bknv_6a2e28e375c402ac7e89cfda",
+          "protocol": "https",
+          "host": [
+            "api",
+            "iluma",
+            "ai"
+          ],
+          "path": [
+            "v1.1",
+            "identity",
+            "bank_account_data_requests",
+            "bknv_6a2e28e375c402ac7e89cfda"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
